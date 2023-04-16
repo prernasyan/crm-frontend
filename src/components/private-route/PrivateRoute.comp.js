@@ -35,7 +35,7 @@ export const PrivateRoute = ({ children, ...rest }) => {
 				isAuth ? (
 					<DefaultLayout>{children}</DefaultLayout>
 				) : (
-					< Navigate
+					<Navigate
 						to={{
 							pathname: "/",
 							state: { from: location },
