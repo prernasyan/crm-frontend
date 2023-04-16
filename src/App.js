@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 import { PrivateRoute } from "./components/private-route/PrivateRoute.comp";
@@ -17,7 +17,7 @@ function App() {
 	return (
 		<div className="App">
 			<Router>
-				<Switch>
+				<Routes>
 					<Route exact path="/">
 						<Entry />
 					</Route>
@@ -47,7 +47,7 @@ function App() {
 					<Route path="*">
 						<h1>404 Page not found</h1>
 					</Route>
-				</Switch>
+				</Routes>
 			</Router>
 		</div>
 	);

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Route, Redirect } from "react-router-dom";
+import { Route, redirect } from "react-router-dom";
 import { loginSuccess } from "../login/loginSlice";
 import { getUserProfile } from "../../pages/dashboard/userAction";
 
@@ -35,7 +35,7 @@ export const PrivateRoute = ({ children, ...rest }) => {
 				isAuth ? (
 					<DefaultLayout>{children}</DefaultLayout>
 				) : (
-					<Redirect
+					< redirect
 						to={{
 							pathname: "/",
 							state: { from: location },
