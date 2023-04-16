@@ -26,7 +26,7 @@ const passVerificationError = {
 	confirmPass: false,
 };
 
-const UpdatePasswordForm = () => {
+export const UpdatePasswordForm = () => {
 	const dispatch = useDispatch();
 
 	const [newPassword, setNewPassword] = useState(initialState);

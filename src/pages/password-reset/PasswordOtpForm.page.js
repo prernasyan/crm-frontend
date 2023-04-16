@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 import { Card } from "react-bootstrap";
 import { ResetPassword } from "../../components/password-reset/PasswordReset.comp";
-import UpdatePasswordForm from "../../components/password-reset/UpdatePasswordForm.comp";
+import { UpdatePasswordForm } from "../../components/password-reset/UpdatePasswordForm.comp";
 
 import "./passwordOtpForm.style.css";
 
